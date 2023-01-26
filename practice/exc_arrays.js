@@ -13,9 +13,17 @@ console.log(myOtherArray);
 console.log(myOtherArray[0]); //read single item
 console.log(myArr[1]);
 console.log(myArr.indexOf("betty"));
-const bettyIdx = myArr.indexOf("jetty");
+const bettyIdx = myArr.indexOf("betty");
 console.log(bettyIdx);
 if (bettyIdx > -1) {
     console.log(myArr[bettyIdx]);
 }
 // getting rid of things in the middle of a array
+myArr.splice(bettyIdx, 0, "robert");
+console.log(myArr);
+console.log(myArr.length);
+// math.random() for random 0 and 1
+//Math.round(n) round to nearest whole number
+// myArr length - 1 to get the last index number of an array
+const randomNumber = Math.round(Math.random() * (myArr.length -1));
+console.log(myArr[randomNumber]);
